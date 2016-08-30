@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Ludum Dare 36 - Terminal Condition</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.terminal-0.10.12.css" type="text/css" />
+
+    <script src="lib/jquery-3.1.0.js"></script>
+    <script src="lib/jquery.terminal-0.10.12.js"></script>
+    <script src="lib/jquery.mousewheel.js"></script>
+    <script src="lib/unix_formatting.js"></script>
+
+    <script src="app.js"></script>
+
+    <style>
+        body {
+            background-color: rgb(15%,15%,15%);
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+        }
+
+        #term_timeleft,
+        #term_demo {
+            margin: 0.5rem;
+            min-width: 30rem;
+            width: 30rem;
+            border: 1rem solid gray;
+            border-radius: 0.5rem;
+            box-shadow: 0.1rem 0.4rem 0.1rem 0 rgba(0,0,0,0.75);
+            text-transform: uppercase;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.25rem;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: lightgray;
+        }
+
+            ::-webkit-scrollbar-thumb:window-inactive {
+                background: gray;
+            }
+    </style>
+</head>
+<body>
+    <div id="term_demo">
+
+    </div>
+    <div id="term_timeleft">
+
+    </div>
+</body>
+</html>
